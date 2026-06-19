@@ -13,7 +13,7 @@ function ProductDetails({ mode }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/products/${id}`)
+      .get(`https://agricommerce-mern.onrender.com/api/products/${id}`)
       .then((res) => {
         setProduct(res.data);
       })

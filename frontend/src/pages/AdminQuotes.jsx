@@ -4,7 +4,7 @@ function AdminQuotes() {
   const [quotes, setQuotes] = useState([]);
 
   const fetchQuotes = () => {
-    fetch("http://localhost:5000/api/quotes")
+    fetch("https://agricommerce-mern.onrender.com/api/quotes")
       .then((res) => res.json())
       .then((data) => setQuotes(data.quotes));
   };
@@ -22,7 +22,7 @@ function AdminQuotes() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/quotes/${id}`,
+        `https://agricommerce-mern.onrender.com/api/quotes/${id}`,
         {
           method: "DELETE",
         }

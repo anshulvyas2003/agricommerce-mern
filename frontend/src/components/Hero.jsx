@@ -9,7 +9,7 @@ function Hero({ mode }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://agricommerce-mern.onrender.com/api/products")
       .then((response) => {
         setProducts(response.data);
       })

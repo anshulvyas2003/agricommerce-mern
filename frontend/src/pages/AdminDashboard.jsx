@@ -5,7 +5,7 @@ function AdminDashboard() {
   const [quotes, setQuotes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/orders")
+    fetch("https://agricommerce-mern.onrender.com/api/orders")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -13,7 +13,7 @@ function AdminDashboard() {
         }
       });
 
-    fetch("http://localhost:5000/api/quotes")
+    fetch("https://agricommerce-mern.onrender.com/api/quotes")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {

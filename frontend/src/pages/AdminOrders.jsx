@@ -8,7 +8,7 @@ function AdminOrders() {
   const fetchOrders = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/orders"
+        "https://agricommerce-mern.onrender.com/api/orders"
       );
 
       const data = await response.json();
@@ -30,7 +30,7 @@ function AdminOrders() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${id}`,
+        `https://agricommerce-mern.onrender.com/api/orders/${id}`,
         {
           method: "DELETE",
         }
@@ -56,7 +56,7 @@ function AdminOrders() {
   ) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${id}`,
+        `https://agricommerce-mern.onrender.com/api/orders/${id}`,
         {
           method: "PUT",
           headers: {

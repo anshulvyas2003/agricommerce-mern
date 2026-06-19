@@ -23,7 +23,7 @@ function QuoteForm() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/quotes",
+        "https://agricommerce-mern.onrender.com/api/quotes",
         {
           productId: id,
           ...formData,
